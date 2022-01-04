@@ -17,7 +17,7 @@ pipeline {
         stage("Tag new name") {
             steps {
             sh """
-            docker tag metalmari/codearena_mongo:latest metalmari/mongo_codearena:latest
+            docker tag metalmari/codearena_mongo:latest metalmari/mongo_db_codearena:latest
             """
             }
         }
@@ -25,7 +25,7 @@ pipeline {
             steps {
                 withDockerRegistry(credentialsId: 'dockerhub-cred', url: 'https://index.docker.io/v1/') {
                 sh """
-                docker push metalmari/mongo_codearena:latest
+                docker push metalmari/mongo_db_codearena:latest
                 """
                 }
             }
