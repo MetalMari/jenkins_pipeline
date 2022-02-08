@@ -1,0 +1,3 @@
+[submodule "docker-compose_jenkins"]
+	path = docker-compose_jenkins
+	url = https://github.com/MetalMari/docker-compose_jenkins
