@@ -1,0 +1,3 @@
+[submodule "test_sub"]
+	path = test_sub
+	url = https://github.com/MetalMari/test_sub.git
